@@ -1,19 +1,19 @@
 from setuptools import setup
-from happytasks import find_tasks
+from subcommander import find_tasks
 
 setup(
-    name='happytasks',
+    name='subcommander',
     version='0.1',
     author='Nick Sloan',
     author_email='me@nicksloan.org',
-    packages=['happytasks'],
+    packages=['subcommander'],
     install_requires=[
     ],
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'happytasks = happytasks:main',
+            'subcommander = subcommander:main',
         ],
-        'happytasks.tasks': find_tasks('happytasks.sample'),
+        'subcommander.tasks': find_tasks('subcommander.sample'),
     }
 )

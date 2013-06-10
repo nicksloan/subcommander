@@ -34,7 +34,7 @@ def register_subtasks(func):
         func.__name__, description=func.__doc__)
         .set_defaults(func=func))
 
-points = list(iter_entry_points('happytasks.tasks'))
+points = list(iter_entry_points('subcommander.tasks'))
 
 for entry in points:
     try:
